@@ -1,0 +1,372 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.timer-block-parent {
+  display: flex;
+  justify-content: center;
+}
+
+.timer-block {
+  display: flex;
+  width: 80%;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.timer-block div {
+  display: flex;
+  width: 15%;
+  flex-direction: column;
+  background-color: rgb(32, 31, 31);
+  color: aliceblue;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.navbar-toggler {
+  margin: 2%;
+  padding: 0.2rem 0.6rem;
+  ;
+}
+
+@media (max-width: 350px) {
+
+  .header-timer-block,
+  .header-progress-block {
+    font-size: 15px;
+  }
+
+  .timer-block div {
+    font-size: 10px;
+  }
+
+  .timer-block div p {
+    font-size: 8px;
+  }
+
+  .timer-block {
+    width: 85%;
+  }
+
+  .pastfuturediv {
+    width: 80%;
+  }
+
+  .regform {
+    width: 250px;
+  }
+  .NavLinkButton {
+    font-size: 14px;
+    width: 40%;
+    color: rgb(81, 172, 81);
+    margin: 5px;
+  }
+}
+
+
+
+@media (max-width: 990px) and (min-width:350px) {
+
+  .header-timer-block,
+  .header-progress-block {
+    font-size: 30px;
+  }
+
+  .timer-block div {
+    font-size: 15px;
+  }
+
+  .timer-block div p {
+    font-size: 10px;
+  }
+
+  .timer-block {
+    width: 95%;
+  }
+
+  .pastfuturediv {
+    width: 70%;
+  }
+
+  .react-calendar {
+    width: 350px;
+  }
+
+  .regform {
+    width: 300px;
+  }
+  .NavLinkButton {
+    font-size: 14px;
+    width: 40%;
+    color: rgb(81, 172, 81);
+    margin: 5px;
+  }
+}
+
+
+@media (min-width: 990px) {
+  .timer-block div p {
+    font-size: 20px;
+  }
+
+  .header-timer-block,
+  .header-progress-block {
+    font-size: 40px;
+  }
+
+  .pastfuturediv {
+    width: 40%;
+  }
+
+  .react-calendar {
+    width: 350px;
+  }
+
+  .calendar-parent {
+    display: flex;
+    justify-content: center;
+  }
+
+  .regform {
+    width: 400px;
+  }
+  .NavLinkButton {
+    text-align: center;
+    font-size: 28px;
+    width: 40%;
+    color: rgb(81, 172, 81);
+    line-height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+.header-timer-block,
+.header-progress-block {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+
+.NavLinkButton :hover {
+  color: rgb(169, 204, 169);
+}
+
+.progress-div {
+  justify-content: left;
+  display: flex;
+  width: 80%;
+  height: 35px;
+  background-color: grey;
+}
+
+.progress-procents {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  color: black;
+  width: 0%;
+  height: 100%;
+  background-color: rgb(81, 172, 81);
+}
+
+.progress-parent {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.big-block-progress {
+  margin: 25px;
+}
+
+.pastfuture {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.valueprocent {
+  width: 80%;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.pastfuturediv div {
+  font-size: 100%;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  background-color: rgb(81, 172, 81);
+}
+
+.pastfuturediv div div {
+  margin-left: 10px;
+}
+
+.textfuturepast {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.formparrent {
+  display: flex;
+  justify-content: center;
+}
+
+.regform {
+  padding: 5px;
+  margin: 1%;
+  background-color: rgb(169, 204, 169);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: solid 1px black;
+}
+
+.regsignbutton {
+  margin-top: 1%;
+  background-color: rgb(81, 172, 81);
+  font-weight: bold;
+  border: solid 1px black;
+}
+
+.regform input {
+  margin: 2px;
+}
+
+.regform input {
+  width: 90%;
+}
+
+Nav button {
+  color: black;
+  background-color: rgb(81, 172, 81);
+  margin: 0.1rem 0.25rem 0.1rem 0.25rem;
+  border: solid 1px black;
+  padding: 0.5rem;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.calenblock {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.calendar-button {
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+}
+.calendar-button button{
+  background-color:#cecdcc ;
+}
+.calendar-start {
+  margin: 1%;
+}
+
+.calendar-finish {
+  margin: 1%;
+}
+
+.closeform {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.closeform div {
+  margin: 0% 1% 1% 0%;
+}
+
+.test {
+  color: aliceblue;
+}
+
+.Ad {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.Ad div {
+  position: fixed;
+  text-align: center;
+  padding: 1%;
+  font-weight: bold;
+  background-color: rgb(81, 172, 81);
+  border: solid 2px #212529;
+  width: 90%;
+}
+.displayPersonalData{
+font-size: 20px;
+margin: 5px;
+}
+.divpersonalInfo{
+  display: flex;
+  justify-content: center;
+}
+.personalInfo{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: #212529;
+  width: 250px;
+}
+.personalInfo input {
+width: 100%;
+}
+.personalInfo button{
+  width: 100%; 
+}
+.privateofficefon{
+  display: flex;
+  justify-content:center;
+  padding:5px;
+  background-color:#CAC2B5;
+}
+.Privateofficeinfo{
+  display: flex;
+  justify-content:space-between;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+.Privateofficeinfo div{
+margin-right: 20px;
+}
+.errordiv{
+  font-weight: 500;
+  color: red;
+  width: 100%;
+  text-align: center;
+}
+form button{background-color:#cecdcc;
+  ;
+}
