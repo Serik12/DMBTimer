@@ -78,8 +78,8 @@ export default function NaviBar({
               </button>
             ) : (
               <>
-                <button onClick={logfunc1}>Log In</button>
-                <button onClick={logfunc2}>SignUp</button>
+                <button onClick={logfunc1}>Вход</button>
+                <button onClick={logfunc2}>Регистрация</button>
               </>
             )}
           </Nav>
