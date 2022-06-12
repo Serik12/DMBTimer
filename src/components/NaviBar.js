@@ -74,7 +74,7 @@ export default function NaviBar({
                   navigate("/");
                 }}
               >
-                Logout
+                Выход
               </button>
             ) : (
               <>

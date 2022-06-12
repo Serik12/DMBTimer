@@ -10,9 +10,7 @@ import SignUp from "./components/SignUp";
 import { useDispatch } from "react-redux";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { getFirestore, doc, onSnapshot, Timestamp } from "firebase/firestore";
-import { parseISO } from "date-fns";
 function Routering() {
-  const dispatch = useDispatch();
   const [datestart, setDatestart] = useState("");
   const [datedmb, setDatedmb] = useState("");
   const [valueform, setvalueLogform] = useState("");
@@ -68,12 +66,11 @@ function Routering() {
         ) : null}
         {valueform == "REG" ? (
           <div className="formparrent">
-            {" "}
             <SignUp
               callform={changevaluelogform}
               getshowuseremail={setshowuseremail}
               getdisplayname={setdisplayname}
-            />{" "}
+            />
           </div>
         ) : null}
 

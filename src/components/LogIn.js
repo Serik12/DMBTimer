@@ -1,12 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import {
-  getAuth,
-  signInWithEmailAndPassword,
-  updateProfile,
-} from "firebase/auth";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import Form from "./Form";
-import { current } from "@reduxjs/toolkit";
 export default function LogIn({ callform, getshowuseremail, getdisplayname }) {
   const [error, seterror] = useState(null);
   const setdata = (email, displayname) => {
@@ -32,7 +27,7 @@ export default function LogIn({ callform, getshowuseremail, getdisplayname }) {
 
   return (
     <Form
-      title="LOGIN"
+      title="Авторизоваться"
       handleClick={handleLogin}
       callform={callform}
       error={error}

@@ -9,7 +9,7 @@ import Form from "./Form";
 import { getFirestore, doc, setDoc } from "firebase/firestore";
 export default function SignUp({ callform, getshowuseremail, getdisplayname }) {
   const [error, seterror] = useState(null);
-  const handleSignUp = (email, passsword, displayname) => {
+  const handleSignUp = (email, passsword, displayname, rank) => {
     const auth = getAuth();
     const db = getFirestore();
     createUserWithEmailAndPassword(auth, email, passsword)
@@ -28,7 +28,8 @@ export default function SignUp({ callform, getshowuseremail, getdisplayname }) {
           setDoc(doc(db, "users", email), {
             datestart: null,
             datefinish: null,
-            email: null,
+            //  email: email,
+            rank: rank,
           });
           console.log("Заполнил ");
         } catch (error) {
@@ -43,7 +44,7 @@ export default function SignUp({ callform, getshowuseremail, getdisplayname }) {
 
   return (
     <Form
-      title="SIGNUP"
+      title="Зарегистрироваться"
       handleClick={handleSignUp}
       callform={callform}
       error={error}
